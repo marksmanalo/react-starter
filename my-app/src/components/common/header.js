@@ -5,19 +5,22 @@ import {
   Link
 } from 'react-router-dom';
 import AboutPage from '../about/AboutPage';
+import HomePage from '../home/HomePage';
 
 const Header = () => {
   return (
     <Router>
-      <nav>
-        <Link to="/">Home</Link>
-        {" | "}
-        <Link to="/about">About</Link>
-        {" | "}
-        <Link to="/topics">Topics</Link>
-
+      <div>
+        <nav>
+          <Link to="/">Home</Link>
+          {" | "}
+          <Link to="/about">About</Link>
+          {" | "}
+          <Link to="/topics">Topics</Link>
+        </nav>
+        <Route path="/" component={HomePage} />
         <Route path="/about" component={AboutPage} />
-      </nav>
+      </div>
     </Router>
   );
 };
