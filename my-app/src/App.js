@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/common/Header';
 
 import {
   BrowserRouter as Router,
@@ -19,12 +20,6 @@ const Home = () => (
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
       </div>
-  </div>
-)
-
-const About = () => (
-  <div>
-    <h2>About</h2>
   </div>
 )
 
@@ -62,21 +57,7 @@ const Topics = ({ match }) => (
   </div>
 )
 
-const BasicExample = () => (
-  <Router>
-    <div>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/topics">Topics</Link></li>
-      </ul>
-
-      <hr/>
-
-      <Route exact path="/" component={Home}/>
-      <Route path="/about" component={About}/>
-      <Route path="/topics" component={Topics}/>
-    </div>
-  </Router>
+const App = () => (
+  <Header />
 )
-export default BasicExample
+export default App;
