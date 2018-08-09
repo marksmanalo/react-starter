@@ -12,4 +12,6 @@ First install the node modules required:
 ## Dependencies
 Library | Usage
 :--- | :---
-[react-router](https://github.com/ReactTraining/react-router) | routing
+[react](https://github.com/facebook/react) | A declarative, efficient, and flexible JavaScript library for building user interfaces
+[react-dom](https://github.com/facebook/react/tree/master/packages/react-dom) | Entry point of the DOM-related rendering paths
+[react-router-dom](https://github.com/ReactTraining/react-router) | Routing
