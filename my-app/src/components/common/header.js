@@ -19,14 +19,14 @@ const Header = () => {
         </header>
         <p className="Header-intro">
           <nav>
-            <Link to="/home">Home</Link>
+            <Link to="/">Home</Link>
             {" | "}
             <Link to="/about">About</Link>
             {" | "}
             <Link to="/topics">Topics</Link>
           </nav>
         </p>
-        <Route path="/home" component={HomePage} />
+        <Route exact path="/" component={HomePage} />
         <Route path="/about" component={AboutPage} />
       </div>      
     </Router>
